@@ -3,5 +3,11 @@ name = "governed-commerece-lakehouse"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.12, <3.14"
+dependencies = [
+    "dbt-core>=1.11.12",
+    "dbt-postgres>=1.10.2",
+    "dotenv>=0.9.9",
+    "pandas>=3.0.3",
+    "sqlalchemy>=2.0.51",
+]
