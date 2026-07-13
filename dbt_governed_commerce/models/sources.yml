@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('POSTGRES_DB') }}"
+    schema: raw
+    description: Raw Olist e-commerce data.
+
+    tables:
+      - name: customers_raw
+        description: Raw customer master data.
+
+      - name: orders_raw
+        description: Raw order lifecycle data.
+
+      - name: order_items_raw
+        description: Raw order line item data.
+
+      - name: order_payments_raw
+        description: Raw payment data.
+
+      - name: order_reviews_raw
+        description: Raw customer review data.
+
+      - name: products_raw
+        description: Raw product catalogue.
+
+      - name: sellers_raw
+        description: Raw seller master data.
+
+      - name: category_translation_raw
+        description: Portuguese to English product categories.
