@@ -1,0 +1,16 @@
+checks for raw.orders_raw:
+  - row_count > 90000
+  - missing_count(order_id) = 0
+  - missing_count(customer_id) = 0
+
+checks for raw.customers_raw:
+  - row_count > 90000
+  - missing_count(customer_id) = 0
+  - duplicate_count(customer_id) = 0
+
+checks for raw.order_items_raw:
+  - row_count > 100000
+  - missing_count(order_id) = 0
+  - missing_count(product_id) = 0
+  - min(price) >= 0
+  - min(freight_value) >= 0

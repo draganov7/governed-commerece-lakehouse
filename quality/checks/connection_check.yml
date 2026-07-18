@@ -1,0 +1,2 @@
+checks for raw.orders_raw:
+  - row_count > 0
