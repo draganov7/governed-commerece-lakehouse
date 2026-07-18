@@ -1,0 +1,17 @@
+checks for marts.fct_orders:
+  - row_count > 90000
+  - missing_count(order_id) = 0
+  - duplicate_count(order_id) = 0
+  - missing_count(customer_id) = 0
+  - min(total_payment_value) >= 0
+
+checks for marts.marts_revenue_daily:
+  - row_count > 500
+  - missing_count(order_date) = 0
+  - missing_count(gross_revenue) = 0
+  - min(gross_revenue) >= 0
+
+checks for marts.marts_customer_360:
+  - row_count > 90000
+  - missing_count(customer_unique_id) = 0
+  - min(lifetime_value) >= 0

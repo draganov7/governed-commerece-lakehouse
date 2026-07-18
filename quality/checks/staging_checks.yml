@@ -1,0 +1,18 @@
+checks for staging.stg_orders:
+  - row_count > 90000
+  - missing_count(order_id) = 0
+  - invalid_count(order_status) = 0:
+      valid values:
+        - created
+        - approved
+        - invoiced
+        - processing
+        - shipped
+        - delivered
+        - unavailable
+        - canceled
+
+checks for staging.stg_order_payments:
+  - row_count > 90000
+  - missing_count(order_id) = 0
+  - min(payment_value) >= 0
