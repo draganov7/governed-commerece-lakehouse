@@ -18,8 +18,6 @@ graph TD
     C -.->|Soda Core Checks| E
     D -.->|Soda Core Checks| E
     
-    B -.->|Metadata & Lineage| F[OpenMetadata Catalog]
-    C -.->|Metadata & Lineage| F
     D -.->|Metadata & Lineage| F
 ```
 
