@@ -18,7 +18,7 @@ graph TD
     C -.->|Soda Core Checks| E
     D -.->|Soda Core Checks| E
     
-    D -.->|Metadata & Lineage| F
+    D -.->|Metadata & Lineage| F[OpenMetadata Catalog]
 ```
 
 *   **Data Sources**: Brazilian E-Commerce Public Dataset by Olist (containing customers, orders, payments, reviews, products, and sellers).
